@@ -13,7 +13,14 @@ set -ouex pipefail
 dnf5 install -y tmux 
 dnf5 install -y gnome-software
 dnf5 install -y gnome-boxes
-dnf5 install -y gnome-shell
+dnf5 install -y htop
+dnf5 install -y nautilus
+dnf5 install -y tlp
+dnf5 install -y network-manager
+dnf5 install -y curl
+dnf5 install -y wget
+dnf5 install -y git
+dnf5 clean all
 
 # Use a COPR Example:
 #

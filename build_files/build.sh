@@ -11,6 +11,9 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y tmux 
+dnf5 install -y gnome-software
+dnf5 install -y gnome-boxes
+dnf5 install -y gnome-shell
 
 # Use a COPR Example:
 #

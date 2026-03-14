@@ -11,6 +11,7 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y tmux 
+dnf5 install -y gnome-shell
 dnf5 install -y gnome-software
 dnf5 install -y gnome-boxes
 dnf5 install -y htop
@@ -20,7 +21,12 @@ dnf5 install -y network-manager
 dnf5 install -y curl
 dnf5 install -y wget
 dnf5 install -y git
+dnf5 install -y cat
+dnf5 install -y neofetch
+dnf5 install -y gnome-terminal
 dnf5 clean all
+systemctl enable gdm
+
 
 # Use a COPR Example:
 #

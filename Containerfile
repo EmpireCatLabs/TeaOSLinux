@@ -3,8 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/bazzite:stable
-
+FROM quay.io/fedora/fedora-bootc:41
 ## If needed, make /opt immutable
 # RUN rm /opt && mkdir /opt
 

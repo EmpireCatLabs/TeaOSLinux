@@ -8,9 +8,7 @@ bootc switch --mutate-in-place --transport registry ghcr.io/ublue-os/image-templ
 [customizations.installer.modules]
 enable = [
   "org.fedoraproject.Anaconda.Modules.Storage",
-  "org.fedoraproject.Anaconda.Modules.Runtime"
-]
-disable = [
+  "org.fedoraproject.Anaconda.Modules.Runtime",
   "org.fedoraproject.Anaconda.Modules.Network",
   "org.fedoraproject.Anaconda.Modules.Security",
   "org.fedoraproject.Anaconda.Modules.Services",
@@ -18,3 +16,4 @@ disable = [
   "org.fedoraproject.Anaconda.Modules.Subscription",
   "org.fedoraproject.Anaconda.Modules.Timezone"
 ]
+
